@@ -1,0 +1,246 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: rgb(92, 58, 90);
+  background: #115f77;
+}
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #6633ff;
+}
+p a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1b4599;
+}
+p a:hover {
+  color: #37023b;
+  text-decoration: underline;
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #491b49;
+  margin: 0;
+}
+/* Section Styles */
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: #20dac1;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: #20dac1;
+}
+header {
+  text-align: center;
+  background: url('images/turtles.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 7px solid #20dac1;;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.3);
+}
+header h1 {
+  font-size: 2em;
+  color: #ff4e00;
+}
+.tag {
+  background-color: #0a1533;
+  padding: 20px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+.location {
+  background-color: #0a1533;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.card-full-width {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 100%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card-full-width:hover {
+  border-color: #09ff00;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: #ff4e00;
+}
+.card .image, .card-full-width .image {
+  max-width: 400px;
+  border-radius: 6px;
+}
+.hobby-container {
+  display: inline-grid;
+  margin: auto auto 40px auto;
+}
+.hobby {
+  margin-top: 20px;
+}
+ul.skills {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 0;
+  text-align: left;
+}
+.skills li {
+  border-radius: 3px;
+  display: inline-block;
+  background: #ff4e00;
+  color: rgb(57, 135, 141);
+  padding: 6px;
+  margin: 4px;
+}
+.skills li:nth-child(odd) {
+  background: #1b4599;
+}
+footer {
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100%;
+  min-height: 60px;
+  padding: 20px 0 40px 20px;
+  background-color: #222;
+}
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  display: inline-block;
+}
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .8;
+  transition: all .5s;
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+  header {
+    min-height: 470px;
+  }
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+  header h1 {
+    font-size: 3em;
+    color: #20dac1;
+  }
+  main {
+    padding-top: 20px;
+  }
+  main p {
+    font-family: 'Roboto Slab', sans-serif;
+    line-height: 1.6em;
+  }
+  main h2 {
+    font-size: 1.8em;
+    line-height: 1.6em;
+  }
+  .hobby-container {
+  display: inline-flex;
+  margin: auto auto 40px auto;
+  }
+  .hobby {
+  padding: 0 0 0 40px;
+  }
+  footer {
+    color: #fff;
+    font-size: 1.3em;
+    max-width: 100%;
+  }
+}
+
