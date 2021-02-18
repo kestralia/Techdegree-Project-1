@@ -67,8 +67,8 @@ h1, h2, h3, h4 {
 }
 header {
   text-align: center;
-  background: url('images/turtles.jpg') no-repeat top center ;
-  background-size: cover;
+  background: url('images/beach-background.png') no-repeat bottom center;
+  background-size: auto;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -84,7 +84,7 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.3);
+  transform: scale(1.5);
 }
 header h1 {
   font-size: 2em;
